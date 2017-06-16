@@ -1,12 +1,49 @@
-{% extends 'base.html.twig' %}
-
-{% block body %}
-    <div class="container">
-
-        <div class="starter-template">
-            <h1>Bootstrap starter template</h1>
-            <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        </div>
-
-    </div><!-- /.container -->
+{% extends 'base.html.twig' %} {% block body %}
+<div class="container">
+    <span>IF <br/>YOU <br/>ARE A <br/>VEGAN</span>
+    <div class="content-container">
+        <img src="{{ asset('assets/images/home.png') }}"/>
+    </div>
+    <span>IT <br/>IS <br/>YOUR <br/>PLACE</span>
+</div>
+{% endblock %} {% block stylesheet %}
+<style>
+    *{
+        padding: 0px;
+        margin:0px;
+    }
+    .container{
+        width:80%;
+        height: 400px;
+        margin:auto;
+        margin-top: 80px;
+    }
+    .content-container {
+        width: 65%;
+        height: 400px;
+        border: 3px solid #7d7d7d;
+        float: left;
+        margin-left: 30px;
+        margin-right: 20px;
+    }
+     .content-container img{
+        width: 140%;
+        margin-left:-20%;
+        margin-top:-18%;
+    }
+    .container span {
+        float: left;
+        font-size: 40px;
+        color:#7d7d7d;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top:50px;
+    }
+    .container span:last-child {
+        float: right;
+        font-size: 40px;
+        color:#7d7d7d;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: right;
+    }
+</style>
 {% endblock %}

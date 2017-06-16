@@ -11,9 +11,16 @@
     <title>{% block title %}Welcome!{% endblock %}</title>
 
     {% block stylesheet %}
-
-        {% include 'includes/page_style.html.twig' %}
-
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            .container{
+                width:80%;
+                margin:auto;
+            }
+        </style>
     {% endblock %}
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
