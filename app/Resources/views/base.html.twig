@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/js/bootstrap.min.css') }}" />
 
     <title>{% block title %}Welcome!{% endblock %}</title>
 
@@ -41,7 +42,7 @@
 
 {% endblock %}
 
-
+{% include 'includes/footer.html.twig' %}
 
 {% block javascripts %}
     {% include 'includes/page_script.html.twig' %}

@@ -1,12 +1,13 @@
 <nav>
     <ul class="nav-bar">
         <li class="active"><a href="#">ANA SAYFA</a></li>
-        <li><a href="#menu">MENU</a></li>
+        <li><a href="/menu">MENU</a></li>
         <li><a class="logo" href="#">CookNow</a></li>
-        <li><a href="#sss">SSS</a></li>
-        <li><a href="#user">GİRİŞ YAP / ÜYE OL</a></li>
+        <li><a href="/sss">SSS</a></li>
+        <li><a href="/user">GİRİŞ YAP / ÜYE OL</a></li>
     </ul>
 </nav>
+
 
 <style>
     nav {
@@ -28,21 +29,22 @@
         float: left;
         height: 30px;
         margin-top: 10px;
-        padding-left: 6%;
-        padding-right: 6%;    
-        -webkit-transition: border 2s ease-out;
-        -moz-transition: border 2s ease-out;
-        -o-transition: border 2s ease-out;
-        transition: border 2s ease-out;
+        width:19%;
+        -webkit-transition: border 2s ease;
+        -moz-transition: border 2s ease;
+        -o-transition: border 2s ease;
+        transition: border 2s ease;
     }
 
     nav .nav-bar li a {
         margin: auto;
         float: left;
+        width:100%;
         color: #d8d8d8;
         font-size: 13px;
         line-height: 30px;
-        text-decoration: none; 
+        text-decoration: none;
+        text-align: center;
     }
 
     .logo {
@@ -50,7 +52,12 @@
     }
 
     .active {
-        border:2px solid #39521c;
+        border: 2px solid #39521c;
         border-radius: 20px;
     }
+
+    @media (min-width: 1160px) {
+       
+
+     }
 </style>
